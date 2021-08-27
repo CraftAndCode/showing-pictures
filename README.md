@@ -22,11 +22,13 @@ basic.forever(function () {
 Hello! Today you'll know how to display pictures with your Micro:bit!
 
 ## Step 1 @showDialog
-The display of your Micro:bit has 25 lights that can be turned on and off. That means there are 33554432 possible combinations! 
+The display of your Micro:bit has 25 LEDs that can be turned on and off. That means there are 33554432 possible combinations! 
+  
+To learn more about LEDs, [watch this video](https://www.youtube.com/watch?v=qqBmvHD5bCw&list=PLMMBk9hE-SeqDYtw9pGNPsQ10V_EGMyGe&index=1)!
 
 ## Step 2 @showHint
 ### Showing pictures
-Let's try to create an image. First, add a ``||basic.show leds||`` block from the toolbox.
+Let's try to create an image. First, add a ``||basic.show leds||`` block from the toolbox.  
 ```hint
 It looks like this:
 ```

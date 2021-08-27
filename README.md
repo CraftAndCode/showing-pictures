@@ -1,31 +1,124 @@
+# Showing pictures
 
-> Open this page at [https://craftandcode.github.io/showing-pictures/](https://craftandcode.github.io/showing-pictures/)
+```template
+basic.forever(function () {
+	
+})
 
-## Use as Extension
+```
+```blocks
+    basic.showIcon(IconNames.Heart)
+    basic.showArrow(ArrowNames.North)
+    basic.showLeds(`
+        . # # # .
+        # # # # #
+        . # # # .
+        . . # . .
+        . # # # .
+        `)
+    basic.clearScreen()
+```
+## Step 0 @showDialog
+Hello! Today you'll know how to display pictures with your Micro:bit!
 
-This repository can be added as an **extension** in MakeCode.
+## Step 1 @showDialog
+The display of your Micro:bit has 25 lights that can be turned on and off. That means there are 33554432 possible combinations! 
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/craftandcode/showing-pictures** and import
+## Step 2 @showHint
+### Showing pictures
+Let's try to create an image. First, add a ``||basic.show leds||`` block from the toolbox.
+```hint
+It looks like this:
+```
+```block
+basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+```
+## Step 3
+### Showing pictures
+Place this block inside the ``||basic.forever||`` block and click on the squares to get a picture that you like.
+```diffblocks
+basic.forever(function () {
+	
+})
+----------
+basic.forever(function () {
+	basic.showLeds(`
+        . # . # .
+        # . # . #
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+})
+```
 
-## Edit this project ![Build status badge](https://github.com/craftandcode/showing-pictures/workflows/MakeCode/badge.svg)
+## Step 4
+### Using ready-made icons
+There are also some ready-made icons to choose from. They can be displayed with the help of a ``||basic.show icon||`` block. Try it now!  
+  
+Replace the ``||basic.show leds||`` block with ``||basic.show icon||`` and select any of the 40 icons.
+```hint
+Your code should look like this:
+```
 
-To edit this repository in MakeCode.
+```block
+basic.forever(function () {	
+    basic.showIcon(IconNames.Heart)
+})
+```
+## Step 5
+### Showing arrows
+A ``||basic.show arrow||`` block is a simple way to show an arrow pointing to one of 8 directions.
+  
+Try it yourself and then click ``|>|`` to challenge yourself!
+```block
+    basic.showArrow(ArrowNames.North)
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/craftandcode/showing-pictures** and click import
+## Step 6 @showHint
+### Challenge
+Use everything you've learned today to display these three pictures:
 
-## Blocks preview
+![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/picture1.png)  
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/picture2.png)  
 
-![A rendered view of the blocks](https://github.com/craftandcode/showing-pictures/raw/master/.github/makecode/blocks.png)
+![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/picture3.png)
 
-#### Metadata (used for search, rendering)
+## Step 7 @showHint
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+### Displaying animations
+If the pictures are shown one after another it is called an animation and can give the illusion of movement.
+```hint
+An example of animation
+```
+![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/Heartbeat.gif)
+
+
+
+## Step 8 @showHint
+### Displaying animations
+Let's display the animation of a heartbeat! This animation has only two pictures in it, but that's enough, as they are repeated ``||basic.forever||``.
+```blocks
+})
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.SmallHeart)
+})
+```
+
+## Step 9 @showHint
+### Challenge
+Draw pictures and try to match the given animation. 
+```hint
+```
+![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/Pulse.gif)
+
+## Step 10
+Completed all the challenges? Cool! Now you know all about showing pictures and animations with Micro:bit!

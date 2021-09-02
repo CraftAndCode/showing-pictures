@@ -64,7 +64,7 @@ basic.forever(function () {
 ### Using ready-made icons
 There are also some ready-made icons to choose from. They can be displayed with the help of a ``||basic.show icon||`` block. Try it now!  
   
-Replace the ``||basic.show leds||`` block with ``||basic.show icon||`` and select any of the 40 icons.
+Replace the ``||basic.show leds||`` block with ``||basic.show icon||`` block from your toolbox and select any of the 40 icons.
 ```hint
 Your code should look like this:
 ```
@@ -78,13 +78,13 @@ basic.forever(function () {
 ### Showing arrows
 A ``||basic.show arrow||`` block is a simple way to show an arrow pointing to one of 8 directions.
   
-Try it yourself and then click ``|>|`` to challenge yourself!
+Try it yourself and then click ``|Next >|`` to challenge yourself!
 ```block
     basic.showArrow(ArrowNames.North)
 ```
 
 ## Step 6 @showHint
-### Challenge
+### Challenge 1
 Use everything you've learned today to display these three pictures:
 
 ![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/picture1.png)  
@@ -93,7 +93,7 @@ Use everything you've learned today to display these three pictures:
 
 ![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/picture3.png)
 
-## Step 7 @showHint
+## Step 7 @showDialog
 
 ### Displaying animations
 If the pictures are shown one after another it is called an animation and can give the illusion of movement.
@@ -116,11 +116,64 @@ basic.forever(function () {
 ```
 
 ## Step 9 @showHint
-### Challenge
+### Challenge 2
 Draw pictures and try to match the given animation. 
 ```hint
 ```
 ![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/Pulse.gif)
 
 ## Step 10
-Completed all the challenges? Cool! Now you know all about showing pictures and animations with Micro:bit!
+Completed all the challenges? Cool! Now you know all about showing pictures and animations! Download your code to Micro:bit and show to your friends and family!1
+
+## Answers @showDialog
+### Answer: Tutorial 1.1
+```blocks
+basic.showLeds(`
+    . # . # .
+    # . # . #
+    # . # . #
+    . . # . .
+    # # # # #
+    `)
+```
+### Answer: Tutorial 1.2
+```blocks
+basic.showIcon(IconNames.Butterfly)
+
+```
+### Answer: Tutorial 1.2
+```blocks
+basic.showArrow(ArrowNames.SouthEast)
+
+```
+### Answer: Tutorial 2
+```blocks
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # . # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . # # # .
+    # . . . #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # . # .
+    . # # # .
+    . . . . .
+    `)
+```

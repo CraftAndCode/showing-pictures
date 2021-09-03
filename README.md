@@ -1,8 +1,8 @@
-# Showing pictures
+# Displaying pictures
 
 ```template
 basic.forever(function () {
-	
+    
 })
 
 ```
@@ -19,18 +19,18 @@ basic.forever(function () {
     basic.clearScreen()
 ```
 ## Step 0 @showDialog
-Hello! Today you'll know how to display pictures with your Micro:bit!
+Hello! Today you're going to learn how to display pictures with your Micro:bit!
 
 ## Step 1 @showDialog
-The display of your Micro:bit has 25 LEDs that can be turned on and off. That means there are 33554432 possible combinations! 
+Your Micro:bit's display  has 25 LEDs that can be turned on and off. That means there are 33,554,432 possible combinations! 
   
 To learn more about LEDs, [watch this video](https://www.youtube.com/watch?v=qqBmvHD5bCw&list=PLMMBk9hE-SeqDYtw9pGNPsQ10V_EGMyGe&index=1)!
 
 ## Step 2 @showHint
-### Showing pictures
-Let's try to create an image. First, add a ``||basic.show leds||`` block from the toolbox.  
+### Displaying pictures
+Let's try creating an image. First, add a ``||basic.show leds||`` block from the toolbox.  
 ```hint
-It looks like this:
+This is what it looks like:
 ```
 ```block
 basic.showLeds(`
@@ -42,15 +42,15 @@ basic.showLeds(`
         `)
 ```
 ## Step 3
-### Showing pictures
-Place this block inside the ``||basic.forever||`` block and click on the squares to get a picture that you like.
+### Displaying pictures
+Place this block inside the ``||basic.forever||`` block and click on the squares until you see a picture you like.
 ```diffblocks
 basic.forever(function () {
-	
+    
 })
 ----------
 basic.forever(function () {
-	basic.showLeds(`
+    basic.showLeds(`
         . # . # .
         # . # . #
         # . . . #
@@ -62,23 +62,23 @@ basic.forever(function () {
 
 ## Step 4
 ### Using ready-made icons
-There are also some ready-made icons to choose from. They can be displayed with the help of a ``||basic.show icon||`` block. Try it now!  
+There are also some ready-made icons to choose from. These can be displayed with the help of a ``||basic.show icon||`` block. Try it now!  
   
-Replace the ``||basic.show leds||`` block with ``||basic.show icon||`` block from your toolbox and select any of the 40 icons.
+Replace the ``||basic.show leds||`` block with ``||basic.show icon||`` block from your toolbox and select one of the 40 icons.
 ```hint
 Your code should look like this:
 ```
 
 ```block
-basic.forever(function () {	
+basic.forever(function () { 
     basic.showIcon(IconNames.Heart)
 })
 ```
 ## Step 5
-### Showing arrows
-A ``||basic.show arrow||`` block is a simple way to show an arrow pointing to one of 8 directions.
+### Displaying arrows
+A ``||basic.show arrow||`` block is a simple way to show an arrow pointing in one of eight directions.
   
-Try it yourself and then click ``|Next >|`` to challenge yourself!
+Try it for yourself and then click ``|Next >|`` to challenge yourself!
 ```block
     basic.showArrow(ArrowNames.North)
 ```
@@ -96,12 +96,11 @@ Use everything you've learned today to display these three pictures:
 ## Step 7 @showDialog
 
 ### Displaying animations
-If the pictures are shown one after another it is called an animation and can give the illusion of movement.
+If the pictures are shown one after another, this is called an animation and can give the illusion of movement.
 ```hint
 An example of animation
 ```
 ![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/Heartbeat.gif)
-
 
 
 ## Step 8 @showHint
@@ -117,13 +116,13 @@ basic.forever(function () {
 
 ## Step 9 @showHint
 ### Challenge 2
-Draw pictures and try to match the given animation. 
+Draw pictures and try to match the animation. 
 ```hint
 ```
 ![](https://raw.githubusercontent.com/CraftAndCode/alien-pet/master/Pulse.gif)
 
 ## Step 10
-Completed all the challenges? Cool! Now you know all about showing pictures and animations! Download your code to Micro:bit and show to your friends and family!1
+Completed all the challenges? Excellent! Now you know all about displaying pictures and animations! Download your code to Micro:bit and show  your friends and family!
 
 ## Answers @showDialog
 ### Answer: Tutorial 1.1

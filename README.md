@@ -140,7 +140,7 @@ basic.showLeds(`
 basic.showIcon(IconNames.Butterfly)
 
 ```
-### Answer: Tutorial 1.2
+### Answer: Tutorial 1.3
 ```blocks
 basic.showArrow(ArrowNames.SouthEast)
 
